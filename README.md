@@ -222,5 +222,4 @@ npm run lint
 ```
 
 
--   **Solución:** Asegúrate de que las carpetas `node_modules` y `.next` estén listadas en el archivo `.gitignore`. Nunca debes subir estas carpetas a Git.
-```
+
