@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*!
+ * Global Stylesheet
+ * Project: Task Manager
+ * Version: 1.3.0
+ * Author: Eduardo Flores
+ * Description: Balanced contrast theme. Dark Navy text for light mode, Soft Gray for dark mode.
+ */
+
+:root {
+  --background: #ffffff;
+  /* MODO CLARO: Azul Oscuro Profundo (Slate 900) - Se lee negro pero con tono azul elegante */
+  --foreground: #0f172a; 
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    /* MODO OSCURO: Gris Hielo (Slate 200) - Mucho más suave que el blanco puro */
+    --foreground: #e2e8f0; 
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Regla específica para que el texto dentro de bloques (como este código) 
+   sea un Azul un poco más intenso en modo claro para resaltar */
+pre, code, kbd, samp {
+  color: light-dark(#1e3a8a, #93c5fd); /* Azul oscuro en claro / Azul claro en oscuro */
+  font-weight: 500;
+}

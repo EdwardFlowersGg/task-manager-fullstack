@@ -1,0 +1,29 @@
+# frontend/.gitignore
+echo # See https://help.github.com/articles/ignoring-files/ for more about ignoring files. > frontend\.gitignore
+echo >> frontend\.gitignore
+echo # dependencies >> frontend\.gitignore
+echo /node_modules >> frontend\.gitignore
+echo /.pnp >> frontend\.gitignore
+echo .pnp.js >> frontend\.gitignore
+echo >> frontend\.gitignore
+echo # testing >> frontend\.gitignore
+echo /coverage >> frontend\.gitignore
+echo >> frontend\.gitignore
+echo # next.js >> frontend\.gitignore
+echo /.next/ >> frontend\.gitignore
+echo /out/ >> frontend\.gitignore
+echo >> frontend\.gitignore
+echo # production >> frontend\.gitignore
+echo /build >> frontend\.gitignore
+echo >> frontend\.gitignore
+echo # misc >> frontend\.gitignore
+echo .DS_Store >> frontend\.gitignore
+echo *.pem >> frontend\.gitignore
+echo >> frontend\.gitignore
+echo # debug >> frontend\.gitignore
+echo npm-debug.log* >> frontend\.gitignore
+echo yarn-debug.log* >> frontend\.gitignore
+echo yarn-error.log* >> frontend\.gitignore
+echo >> frontend\.gitignore
+echo # local env files >> frontend\.gitignore
+echo .env*.local >> frontend\.gitignore
